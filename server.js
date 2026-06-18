@@ -109,7 +109,13 @@ app.get('/api/contacts', async (req, res) => {
   }
 });
 
-// 11. Start the server and listen on the chosen port
-app.listen(PORT, () => {
-  console.log(`🚀 Server is running on http://localhost:${PORT}`);
-});
+// 11. Export the app for Vercel (serverless) OR run locally
+if (process.env.NODE_ENV === 'production') {
+  // Vercel uses this export
+  module.exports = app;
+} else {
+  // Your local computer uses this
+  app.listen(PORT, () => {
+    console.log(`🚀 Server is running on http://localhost:${PORT}`);
+  });
+}
