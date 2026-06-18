@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JourneyHub – Explore Beautiful Destinations</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fas fa-compass"></i></span>
+        Journey<span class="logo-accent">Hub</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#destinations" class="nav-link">Destinations</a></li>
+        <li><a href="#packages" class="nav-link">Packages</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="https://videos.pexels.com/video-files/1448735/1448735-uhd_2560_1440_24fps.mp4" type="video/mp4"/>
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge"><i class="fas fa-star"></i> #1 Travel Platform</span>
+      <h1 class="hero-title">Explore the World's<br/><span class="hero-highlight">Most Beautiful</span> Places</h1>
+      <p class="hero-subtitle">Discover breathtaking destinations, handcrafted itineraries, and unforgettable journeys — all in one place.</p>
+      <div class="hero-actions">
+        <a href="#destinations" class="btn btn-primary">Explore Now <i class="fas fa-arrow-right"></i></a>
+        <a href="#packages" class="btn btn-ghost">View Packages</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Destinations</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Happy Travelers</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Satisfaction</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== DESTINATIONS SECTION ========== -->
+  <section class="section destinations" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Top Picks</span>
+        <h2 class="section-title">Popular Destinations</h2>
+        <p class="section-sub">Hand-picked destinations loved by thousands of travelers around the globe.</p>
+      </div>
+      <div class="destinations-grid">
+
+        <div class="dest-card">
+          <div class="dest-img-wrap">
+            <img src="https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Santorini, Greece" loading="lazy"/>
+            <span class="dest-tag">Europe</span>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta"><i class="fas fa-map-marker-alt"></i> Santorini, Greece</div>
+            <h3>Santorini</h3>
+            <p>Iconic whitewashed villages, dramatic caldera views and stunning sunsets over the Aegean Sea.</p>
+            <div class="dest-footer">
+              <span class="dest-price">From $1,299</span>
+              <a href="#packages" class="dest-btn">Explore <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dest-card dest-card--featured">
+          <div class="dest-img-wrap">
+            <img src="https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bali, Indonesia" loading="lazy"/>
+            <span class="dest-tag">Asia</span>
+            <span class="dest-badge"><i class="fas fa-fire"></i> Trending</span>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta"><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</div>
+            <h3>Bali</h3>
+            <p>Lush rice terraces, ancient temples, world-class surf and vibrant local culture await you.</p>
+            <div class="dest-footer">
+              <span class="dest-price">From $899</span>
+              <a href="#packages" class="dest-btn">Explore <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <div class="dest-img-wrap">
+            <img src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Patagonia, Argentina" loading="lazy"/>
+            <span class="dest-tag">Americas</span>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta"><i class="fas fa-map-marker-alt"></i> Patagonia, Argentina</div>
+            <h3>Patagonia</h3>
+            <p>Towering granite peaks, massive glaciers, and untouched wilderness at the end of the world.</p>
+            <div class="dest-footer">
+              <span class="dest-price">From $1,599</span>
+              <a href="#packages" class="dest-btn">Explore <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <div class="dest-img-wrap">
+            <img src="https://images.pexels.com/photos/1530259/pexels-photo-1530259.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Maldives" loading="lazy"/>
+            <span class="dest-tag">Indian Ocean</span>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta"><i class="fas fa-map-marker-alt"></i> Maldives</div>
+            <h3>Maldives</h3>
+            <p>Crystal-clear lagoons, overwater bungalows and pristine coral reefs for a perfect island escape.</p>
+            <div class="dest-footer">
+              <span class="dest-price">From $2,199</span>
+              <a href="#packages" class="dest-btn">Explore <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <div class="dest-img-wrap">
+            <img src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Kyoto, Japan" loading="lazy"/>
+            <span class="dest-tag">Asia</span>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta"><i class="fas fa-map-marker-alt"></i> Kyoto, Japan</div>
+            <h3>Kyoto</h3>
+            <p>Ancient shrines, bamboo forests, geisha culture and stunning cherry blossom seasons.</p>
+            <div class="dest-footer">
+              <span class="dest-price">From $1,099</span>
+              <a href="#packages" class="dest-btn">Explore <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <div class="dest-img-wrap">
+            <img src="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Swiss Alps" loading="lazy"/>
+            <span class="dest-tag">Europe</span>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta"><i class="fas fa-map-marker-alt"></i> Swiss Alps, Switzerland</div>
+            <h3>Swiss Alps</h3>
+            <p>Majestic snow-capped peaks, charming mountain villages and world-class skiing and hiking trails.</p>
+            <div class="dest-footer">
+              <span class="dest-price">From $1,799</span>
+              <a href="#packages" class="dest-btn">Explore <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PACKAGES SECTION ========== -->
+  <section class="section packages" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Best Deals</span>
+        <h2 class="section-title">Tour Packages</h2>
+        <p class="section-sub">All-inclusive packages designed to give you the best experience at unbeatable value.</p>
+      </div>
+      <div class="packages-grid">
+
+        <div class="pkg-card">
+          <div class="pkg-header pkg-header--blue">
+            <i class="fas fa-umbrella-beach pkg-icon"></i>
+            <span class="pkg-type">Beach Getaway</span>
+          </div>
+          <div class="pkg-body">
+            <h3>Bali Bliss</h3>
+            <div class="pkg-info">
+              <span><i class="fas fa-clock"></i> 7 Days / 6 Nights</span>
+              <span><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</span>
+              <span><i class="fas fa-users"></i> Up to 6 People</span>
+            </div>
+            <ul class="pkg-features">
+              <li><i class="fas fa-check"></i> Hotel Accommodation</li>
+              <li><i class="fas fa-check"></i> Daily Breakfast</li>
+              <li><i class="fas fa-check"></i> Airport Transfers</li>
+              <li><i class="fas fa-check"></i> Guided Temple Tours</li>
+            </ul>
+            <div class="pkg-footer">
+              <div class="pkg-price"><span class="pkg-from">from</span> $899 <span class="pkg-per">/ person</span></div>
+              <a href="#contact" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card pkg-card--featured">
+          <div class="pkg-ribbon">Most Popular</div>
+          <div class="pkg-header pkg-header--gold">
+            <i class="fas fa-mountain pkg-icon"></i>
+            <span class="pkg-type">Adventure Trek</span>
+          </div>
+          <div class="pkg-body">
+            <h3>Patagonia Explorer</h3>
+            <div class="pkg-info">
+              <span><i class="fas fa-clock"></i> 12 Days / 11 Nights</span>
+              <span><i class="fas fa-map-marker-alt"></i> Argentina & Chile</span>
+              <span><i class="fas fa-users"></i> Up to 10 People</span>
+            </div>
+            <ul class="pkg-features">
+              <li><i class="fas fa-check"></i> Lodge & Camping Mix</li>
+              <li><i class="fas fa-check"></i> All Meals Included</li>
+              <li><i class="fas fa-check"></i> Expert Trek Guide</li>
+              <li><i class="fas fa-check"></i> Park Entry Fees</li>
+            </ul>
+            <div class="pkg-footer">
+              <div class="pkg-price"><span class="pkg-from">from</span> $1,599 <span class="pkg-per">/ person</span></div>
+              <a href="#contact" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card">
+          <div class="pkg-header pkg-header--green">
+            <i class="fas fa-torii-gate pkg-icon"></i>
+            <span class="pkg-type">Cultural Journey</span>
+          </div>
+          <div class="pkg-body">
+            <h3>Japan Discovery</h3>
+            <div class="pkg-info">
+              <span><i class="fas fa-clock"></i> 10 Days / 9 Nights</span>
+              <span><i class="fas fa-map-marker-alt"></i> Tokyo & Kyoto</span>
+              <span><i class="fas fa-users"></i> Up to 8 People</span>
+            </div>
+            <ul class="pkg-features">
+              <li><i class="fas fa-check"></i> 4-Star Hotels</li>
+              <li><i class="fas fa-check"></i> Bullet Train Pass</li>
+              <li><i class="fas fa-check"></i> Cultural Workshops</li>
+              <li><i class="fas fa-check"></i> Local Food Tour</li>
+            </ul>
+            <div class="pkg-footer">
+              <div class="pkg-price"><span class="pkg-from">from</span> $1,299 <span class="pkg-per">/ person</span></div>
+              <a href="#contact" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="section why-us" id="about">
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-left">
+          <span class="section-tag">Why JourneyHub</span>
+          <h2 class="section-title">Travel Better,<br/>Experience More</h2>
+          <p class="why-desc">We've been crafting exceptional travel experiences since 2015. Our team of passionate travel experts curates every detail so you can focus on making memories.</p>
+          <a href="#contact" class="btn btn-primary">Plan My Trip <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="why-right">
+          <div class="feature-item">
+            <div class="feature-icon feat-orange"><i class="fas fa-tag"></i></div>
+            <div class="feature-text">
+              <h4>Affordable Prices</h4>
+              <p>Best-price guarantee on all packages. We match any lower quote or refund the difference.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon feat-blue"><i class="fas fa-shield-halved"></i></div>
+            <div class="feature-text">
+              <h4>Trusted & Safe</h4>
+              <p>Verified guides, insured trips and 24/7 emergency support so you always feel secure.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon feat-green"><i class="fas fa-calendar-check"></i></div>
+            <div class="feature-text">
+              <h4>Easy Booking</h4>
+              <p>Book your dream trip in minutes. Simple online process with flexible payment options.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon feat-purple"><i class="fas fa-headset"></i></div>
+            <div class="feature-text">
+              <h4>24/7 Support</h4>
+              <p>Our dedicated travel concierge is available round-the-clock, wherever in the world you are.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Reviews</span>
+        <h2 class="section-title">What Travelers Say</h2>
+        <p class="section-sub">Real experiences from real adventurers who chose JourneyHub.</p>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testi-card">
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"Absolutely the best travel experience of my life. The Bali package was perfectly organised — from transfers to the guided tours. Every detail was taken care of."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SA</div>
+            <div>
+              <strong>Sarah Anderson</strong>
+              <span>Bali Bliss Package</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card testi-card--accent">
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"Patagonia was always on my bucket list. JourneyHub made it a reality with zero stress. The guide was knowledgeable, friendly and passionate about the landscape."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MC</div>
+            <div>
+              <strong>Marco Castillo</strong>
+              <span>Patagonia Explorer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"Japan was magical and JourneyHub captured every bit of that magic in the itinerary. The food tour in Kyoto alone was worth the entire trip!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">PK</div>
+            <div>
+              <strong>Priya Kapoor</strong>
+              <span>Japan Discovery</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Plan Your<br/>Dream Trip</h2>
+          <p>Have questions or ready to book? Our travel experts are here to help you craft the perfect itinerary.</p>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <span>hello@journeyhub.com</span>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-phone"></i>
+              <span>+1 (800) 555-JOURNEY</span>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-location-dot"></i>
+              <span>123 Explorer Ave, San Francisco, CA</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required/>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@email.com" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="destination">Interested Destination</label>
+              <select id="destination" name="destination">
+                <option value="">Select a destination...</option>
+                <option>Santorini, Greece</option>
+                <option>Bali, Indonesia</option>
+                <option>Patagonia, Argentina</option>
+                <option>Maldives</option>
+                <option>Kyoto, Japan</option>
+                <option>Swiss Alps</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your dream trip..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="form-success">
+              <i class="fas fa-circle-check"></i> Thank you! We'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo logo--light">
+            <span class="logo-icon"><i class="fas fa-compass"></i></span>
+            Journey<span class="logo-accent">Hub</span>
+          </a>
+          <p>Crafting unforgettable journeys since 2015. Your adventure starts here.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="#destinations">Santorini</a></li>
+            <li><a href="#destinations">Bali</a></li>
+            <li><a href="#destinations">Patagonia</a></li>
+            <li><a href="#destinations">Maldives</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 JourneyHub. All rights reserved. Made with <i class="fas fa-heart"></i> for adventurers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
